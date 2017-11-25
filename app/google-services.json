@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "714524285077",
+    "project_id": "books-pivot"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714524285077:android:d49757b88faf41e6",
+        "android_client_info": {
+          "package_name": "com.gmonetix.bookspivot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714524285077-ccqva7tbbtaieemldbbukiat0geojpg7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "714524285077-ctvd97ofdacuu8cpsaqcba6btsjlch9o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gmonetix.bookspivot",
+            "certificate_hash": "56496fdb981c3db509e487c05c652d391c8a86b7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyeWA0suqlHc8iDTOs9tQc8VUY3Lv9Uo0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

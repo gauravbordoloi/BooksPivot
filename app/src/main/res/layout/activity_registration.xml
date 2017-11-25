@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp"
+    android:paddingTop="40dp"
+    tools:context="com.gmonetix.bookspivot.activity.LoginActivity">
+
+    <ImageView
+        android:src="@drawable/logo_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/appCompatEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="14dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black_9e9e9e"
+        app:backgroundTint="@color/white" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:hint="Email"
+        android:textColorHint="@color/black_9e9e9e"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="14dp"
+        app:backgroundTint="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:hint="Password"
+        android:textColorHint="@color/black_9e9e9e"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="14dp"
+        app:backgroundTint="@color/white"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textSize="20sp"
+        android:text="REGISTER"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/login_button"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Already have an account? Login Here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:text="Terms &amp; Conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Privacy Policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

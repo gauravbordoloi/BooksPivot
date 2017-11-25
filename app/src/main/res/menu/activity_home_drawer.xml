@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_account"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/nav_upload"
+        android:icon="@drawable/ic_upload"
+        android:title="Upload" />
+
+    <item
+        android:id="@+id/nav_downloads"
+        android:icon="@drawable/ic_download"
+        android:title="Downloads" />
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share App" />
+            <item
+                android:id="@+id/nav_rate_us"
+                android:icon="@drawable/ic_star"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help &amp; Feedback" />
+            <item
+                android:id="@+id/nav_website"
+                android:icon="@drawable/ic_web"
+                android:title="Official Website" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+
+</menu>

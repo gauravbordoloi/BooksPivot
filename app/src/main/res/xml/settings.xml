@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <SwitchPreference
+        android:icon="@drawable/ic_bell"
+        android:defaultValue="true"
+        android:key="notification"
+        android:title="Notification" />
+
+    <SwitchPreference
+        android:icon="@drawable/ic_night"
+        android:defaultValue="false"
+        android:key="night_mode"
+        android:title="Night Mode" />
+
+    <PreferenceCategory android:title="Others">
+        <Preference
+            android:icon="@drawable/ic_update"
+            android:key="update_app"
+            android:summary="Check App Update"
+            android:title="Update App" />
+        <Preference
+            android:icon="@drawable/ic_library_books"
+            android:key="privacy_policy"
+            android:title="Privacy Policy" />
+        <Preference
+            android:icon="@drawable/ic_library_books"
+            android:key="terms_and_conditions"
+            android:title="Terms &amp; Conditions" />
+        <Preference
+            android:icon="@drawable/ic_help"
+            android:key="help_and_support"
+            android:summary="admin@gmonetix.com"
+            android:title="Help &amp; Support" />
+        <Preference
+            android:icon="@drawable/ic_info"
+            android:summary="1.0"
+            android:title="Version" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
