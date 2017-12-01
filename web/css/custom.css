@@ -1,0 +1,15 @@
+body{
+	margin: 0px;	
+}
+
+.login{
+	background-color: white;
+	z-index: 100;
+}
+
+.login{
+	top: 70px;
+	left:25%;
+	height: 250px;
+	position: absolute;
+}
