@@ -42,6 +42,7 @@
     <TextView
         android:layout_marginTop="16dp"
         android:gravity="center"
+        android:id="@+id/tv_forgotpassword_loginactivity"
         android:textColor="@color/white"
         android:text="Forgot Password?"
         android:layout_width="match_parent"

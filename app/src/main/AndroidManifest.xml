@@ -56,7 +56,8 @@
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.DownloadsActivity" />
-        <activity android:name=".activity.UploadActivity"></activity>
+        <activity android:name=".activity.UploadActivity" />
+        <activity android:name=".activity.ForgotPasswordActivity"></activity>
     </application>
 
 </manifest>

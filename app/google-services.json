@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "487907776711",
-    "firebase_url": "https://bookspivot-fab29.firebaseio.com",
-    "project_id": "bookspivot-fab29",
-    "storage_bucket": "bookspivot-fab29.appspot.com"
+    "project_number": "654505706852",
+    "firebase_url": "https://bookspivot-bc219.firebaseio.com",
+    "project_id": "bookspivot-bc219",
+    "storage_bucket": "bookspivot-bc219.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:487907776711:android:d49757b88faf41e6",
+        "mobilesdk_app_id": "1:654505706852:android:d49757b88faf41e6",
         "android_client_info": {
           "package_name": "com.gmonetix.bookspivot"
         }
       },
       "oauth_client": [
         {
-          "client_id": "487907776711-5ut0c6on8qoug1sl96skh4ko28funerk.apps.googleusercontent.com",
+          "client_id": "654505706852-6of63i2i21sgq2tuch2f8t6sje1jmi52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gmonetix.bookspivot",
+            "certificate_hash": "61ad3b53013dca8f36f39ddd45c7151a694ac936"
+          }
+        },
+        {
+          "client_id": "654505706852-pf6aua8dm060iq11plnspq8l98je29nl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCsoX72hxfLanxT6pXrBeBGctoW9UwuQTA"
+          "current_key": "AIzaSyBP-dzsudr5Uoa8koz_Fs1qK9okLwsWmv8"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654505706852-pf6aua8dm060iq11plnspq8l98je29nl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

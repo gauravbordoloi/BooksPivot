@@ -75,6 +75,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         });
 
         fbLoginButton = (ImageView) findViewById(R.id.fb_login_btn);
+        tvForgotPassword = (TextView) findViewById(R.id.tv_forgotpassword_loginactivity);
         callbackManager = CallbackManager.Factory.create();
 
         callback = new FacebookCallback<LoginResult>() {
@@ -137,6 +138,12 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
         LoginManager.getInstance().registerCallback(callbackManager,callback);
 
+        tvForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this,ForgotPasswordActivity.class));
+            }
+        });
     }
 
     @Override
