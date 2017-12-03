@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".activity.BookDetails">
+
+    <include
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:focusableInTouchMode="true"
+        android:paddingRight="24dp">
+    <!-- Author Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/author_input_layout"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/author" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Book name -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"
+            android:id="@+id/bookName_input_layout"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_bookName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/book"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!--version -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"
+            android:id="@+id/version_input_layout"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/Version" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/navy_blue"
+        android:paddingBottom="16dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingTop="16dp"
+        android:text="@string/submit" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
