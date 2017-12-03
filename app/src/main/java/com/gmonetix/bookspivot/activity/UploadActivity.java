@@ -23,6 +23,8 @@ public class UploadActivity extends AppCompatActivity {
         chooseFile = new Intent(Intent.ACTION_GET_CONTENT);
         chooseFile.addCategory(Intent.CATEGORY_OPENABLE);
         chooseFile.setType("*/*");
+        String[] mimetypes = {"application/pdf", "application/epub"};
+        chooseFile.putExtra(Intent.EXTRA_MIME_TYPES, mimetypes);
         intent = Intent.createChooser(chooseFile, "Choose a file");
         startActivityForResult(intent, 1);
     }
@@ -35,6 +37,9 @@ public class UploadActivity extends AppCompatActivity {
             Log.e("TAG",uri.toString());
             File myFile = new File(uri.toString());
             Log.e("TAG", String.valueOf(myFile.length()));
+
+            Intent formIntent= new Intent(this,BookDetails.class);
+            startActivity(formIntent);
         }
     }
 
