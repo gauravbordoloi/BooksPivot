@@ -21,4 +21,13 @@
     <string name="Version">"Version"</string>
     <string name="submit">"Submit"</string>
 
+    <!-- Login Activity -->
+
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgetpass">Forget Password ?</string>
+    <string name="dowithsocial">Do with Social Networks</string>
+    <string name="noaccount">Don\'t have an account yet ?</string>
+
 </resources>
