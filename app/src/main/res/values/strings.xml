@@ -42,5 +42,11 @@
 
     <string name="upload">Upload</string>
 
+    <!-- Nav_Header_Home Activity -->
+
+    <string name="guestuser">Guest User</string>
+    <string name="number_books">8 Books</string>
+    <string name="downloads">2789 Downloads</string>
+
 
 </resources>
