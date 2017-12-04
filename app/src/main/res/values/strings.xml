@@ -30,4 +30,12 @@
     <string name="dowithsocial">Do with Social Networks</string>
     <string name="noaccount">Don\'t have an account yet ?</string>
 
+    <!-- Registration Activity -->
+
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="alreadyAccount">Already have an account? Login Here</string>
+    <string name="TnC">Terms &amp; Conditions</string>
+    <string name="Privacy">Privacy Policy</string>
+
 </resources>
