@@ -85,6 +85,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/registration"
         android:gravity="center"
         android:textColor="@color/white"
         android:text="Don't have an account yet?"
