@@ -32,6 +32,8 @@
 
     <!-- Registration Activity -->
 
+    //username in LOGIN ACTIVITY
+    //psasword in LOGIN ACTIVITY
     <string name="email">Email</string>
     <string name="register">Register</string>
     <string name="alreadyAccount">Already have an account? Login Here</string>
@@ -47,6 +49,20 @@
     <string name="guestuser">Guest User</string>
     <string name="number_books">8 Books</string>
     <string name="downloads">2789 Downloads</string>
+
+    <!-- home_drawer Activity -->
+
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    //upload in UPLOAD ACTIVITY
+    <string name="download">Download</string>
+    <string name="others">Others</string>
+    <string name="logout">Logout</string>
+    <string name="share">Share App</string>
+    <string name="settings">Settings</string>
+    <string name="rateus">Rate Us</string>
+    <string name="help">Help &amp; Feedback</string>
+    <string name="website">Official Website</string>
 
 
 </resources>
