@@ -38,4 +38,9 @@
     <string name="TnC">Terms &amp; Conditions</string>
     <string name="Privacy">Privacy Policy</string>
 
+    <!-- Upload Activity -->
+
+    <string name="upload">Upload</string>
+
+
 </resources>
