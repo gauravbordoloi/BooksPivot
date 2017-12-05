@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="Username"
+        android:hint="@string/username"
         android:inputType="text"
         android:padding="14dp"
         android:textColor="@color/white"
@@ -29,7 +29,7 @@
         app:backgroundTint="@color/white" />
 
     <android.support.v7.widget.AppCompatEditText
-        android:hint="Email"
+        android:hint="@string/email"
         android:textColorHint="@color/black_9e9e9e"
         android:textColor="@color/white"
         android:gravity="center"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content" />
 
     <android.support.v7.widget.AppCompatEditText
-        android:hint="Password"
+        android:hint="@string/password"
         android:textColorHint="@color/black_9e9e9e"
         android:textColor="@color/white"
         android:gravity="center"
@@ -52,7 +52,7 @@
 
     <Button
         android:textSize="20sp"
-        android:text="REGISTER"
+        android:text="@string/register"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/login_button"
@@ -71,7 +71,7 @@
         android:gravity="center"
         android:textColor="@color/white"
         android:layout_marginTop="40dp"
-        android:text="Terms &amp; Conditions"
+        android:text="@string/TnC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -79,7 +79,7 @@
         android:gravity="center"
         android:textColor="@color/white"
         android:layout_marginTop="10dp"
-        android:text="Privacy Policy"
+        android:text="@string/Privacy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
