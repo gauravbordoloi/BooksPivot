@@ -35,11 +35,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".activity.RegistrationActivity" />
         <activity
@@ -47,7 +43,7 @@
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -56,7 +52,15 @@
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.DownloadsActivity" />
-        <activity android:name=".activity.UploadActivity"></activity>
+        <activity android:name=".activity.UploadActivity" />
+        <activity android:name=".activity.BookDetails" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

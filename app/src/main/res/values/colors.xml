@@ -9,4 +9,6 @@
 
     <color name="black_9e9e9e">#9e9e9e</color>
 
+    <!-- BookDetails Activity -->
+    <color name="navy_blue">#1e6dbc</color>
 </resources>
