@@ -66,6 +66,7 @@ android:fitsSystemWindows="true"
         android:gravity="center"
         android:textSize="20sp"
         android:padding="10dp"
+
         android:textStyle="italic"
         android:fontFamily="sans-serif"
         android:background="@drawable/edittext"
