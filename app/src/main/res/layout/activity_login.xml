@@ -1,164 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
-    android:orientation="vertical"
-
-android:fitsSystemWindows="true"
+    android:background="@drawable/gradient"
+    android:fitsSystemWindows="true"
     tools:context="com.gmonetix.bookspivot.activity.LoginActivity">
 
 
     <ImageView
+        android:id="@+id/topimg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:foreground="@drawable/splash"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bglogin2" />
 
-        android:src="@drawable/logo_header"
-        android:layout_width="180dp"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:scaleType="fitEnd"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content" />
+        android:src="@drawable/logo_header" />
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:layout_weight="2">
-
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="login"
-        android:textAllCaps="true"
-        android:fontFamily="sans-serif"
-        android:textStyle="normal"
-        android:textColor="#ffffff"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
-
-    <EditText
-        android:id="@+id/appCompatEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/curves"
+        android:elevation="4dp"
         android:gravity="center"
-        android:hint="@string/username"
-        android:inputType="text"
-        android:background="@drawable/edittext"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="64dp"
-        android:layout_marginLeft="64dp"
-        android:padding="10dp"
-        android:textColor="#000000"
-        android:textStyle="italic"
-        android:textSize="20sp"
-        android:fontFamily="sans-serif"
-        android:textColorHint="#000000"
-        />
+        android:orientation="vertical">
 
-    <EditText
-        android:hint="@string/password"
-        android:layout_marginRight="64dp"
-        android:layout_marginLeft="64dp"
-        android:textColorHint="#000000"
-        android:textColor="#000000"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:padding="10dp"
-        android:textStyle="italic"
-        android:fontFamily="sans-serif"
-        android:background="@drawable/edittext"
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="welcome"
+
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/appCompatEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/username"
+                android:inputType="text"
+                
+                android:textSize="20sp"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-condensed"
+
+                android:hint="@string/password"
+
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
 
         <Button
 
-            android:text="GO!"
-            android:layout_marginTop="16dp"
+            android:layout_width="100dp"
 
-            android:background="@drawable/login_button1"
-            android:textColor="@color/white"
-            android:textSize="20sp"
 
-            android:fontFamily="sans-serif-smallcaps"
-            android:layout_width="80dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:text="@string/forgetpass"
-        android:fontFamily="sans-serif-smallcaps"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:background="#80e3e3e3"
-
-        android:elevation="8dp"
-        android:orientation="vertical">
-    <TextView
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        android:text="or"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-        <TextView
-            android:gravity="center"
-            android:textSize="15sp"
-            android:textColor="#000000"
+            android:backgroundTint="@color/colorPrimary"
+android:textStyle="bold"
             android:fontFamily="sans-serif-condensed"
-            android:textAllCaps="true"
-            android:textStyle="bold"
-            android:text="@string/dowithsocial"
+            android:text="GO !"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/forgetpass"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic" />
 
-    <LinearLayout
-        android:weightSum="2"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/fb_login_btn"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_facebook"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-        <ImageView
-            android:id="@+id/google_login_btn"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_google_plus"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/noaccount"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/social"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+      <!--      <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="or"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/dowithsocial"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" /> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/fb_login_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    app:srcCompat="@drawable/facebook" />
+
+                <ImageView
+                    android:id="@+id/google_login_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/google" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
     </LinearLayout>
 
-    <TextView
-        android:gravity="center"
-        android:textColor="#000000"
+    <Button
+        android:id="@+id/morelogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#e51c23"
         android:fontFamily="sans-serif-condensed"
+        android:text="use social network"
         android:textAllCaps="true"
-        android:layout_marginBottom="16dp"
-        android:textStyle="bold"
-        android:text="@string/noaccount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    </LinearLayout>
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
-</LinearLayout>
+</RelativeLayout>
