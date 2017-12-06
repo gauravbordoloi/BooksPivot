@@ -12,6 +12,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.facebook.AccessToken;
@@ -66,6 +67,16 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
             Window w = getWindow(); // in Activity's onCreate() for instance
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
+
+        final Button morelogin = (Button) findViewById(R.id.morelogin);
+        final LinearLayout social = (LinearLayout) findViewById(R.id.social);
+        morelogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              morelogin.setVisibility(View.GONE);
+              social.setVisibility(View.VISIBLE);
+            }
+        });
 
         googleLoginButton = (ImageView) findViewById(R.id.google_login_btn);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
