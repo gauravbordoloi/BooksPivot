@@ -28,7 +28,7 @@
         android:layout_height="match_parent">
         <TextView
             android:id="@+id/nav_user_name"
-            android:text="Guest User"
+            android:text="@string/guestuser"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
-                android:text="8 Books"
+                android:text="@string/number_books"
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
@@ -63,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
-                android:text="2789 Downloads"
+                android:text="@string/downloads"
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"

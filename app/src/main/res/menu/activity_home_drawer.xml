@@ -4,50 +4,50 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_home"
-        android:title="Home" />
+        android:title="@string/home" />
     <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/ic_account"
-        android:title="Profile" />
+        android:title="@string/profile" />
 
     <item
         android:id="@+id/nav_upload"
         android:icon="@drawable/ic_upload"
-        android:title="Upload" />
+        android:title="@string/upload" />
 
     <item
         android:id="@+id/nav_downloads"
         android:icon="@drawable/ic_download"
-        android:title="Downloads" />
+        android:title="@string/download" />
 
-    <item android:title="Others">
+    <item android:title="@string/others">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_share"
-                android:title="Share App" />
+                android:title="@string/share" />
             <item
                 android:id="@+id/nav_rate_us"
                 android:icon="@drawable/ic_star"
-                android:title="Rate Us" />
+                android:title="@string/rateus" />
             <item
                 android:id="@+id/nav_help"
                 android:icon="@drawable/ic_help"
-                android:title="Help &amp; Feedback" />
+                android:title="@string/help" />
             <item
                 android:id="@+id/nav_website"
                 android:icon="@drawable/ic_web"
-                android:title="Official Website" />
+                android:title="@string/website" />
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_settings"
-                android:title="Settings" />
+                android:title="@string/settings" />
         </menu>
     </item>
 
     <item
         android:id="@+id/nav_logout"
         android:icon="@drawable/ic_logout"
-        android:title="Logout" />
+        android:title="@string/logout" />
 
 </menu>
