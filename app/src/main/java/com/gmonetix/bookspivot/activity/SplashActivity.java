@@ -1,5 +1,6 @@
 package com.gmonetix.bookspivot.activity;
 
+import android.content.SharedPreferences;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -14,12 +15,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-
 import com.gmonetix.bookspivot.R;
 
 public class SplashActivity extends AppCompatActivity {
-
-
+ 
     // Splash screen timer
     private static int SPLASH_TIME_OUT = 1500;
 
@@ -59,4 +58,3 @@ public class SplashActivity extends AppCompatActivity {
     }
 
 }
-
