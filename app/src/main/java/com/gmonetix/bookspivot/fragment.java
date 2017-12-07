@@ -55,7 +55,7 @@ public class fragment extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0: // Fragment # 0 - This will show FirstFragment
-                    return FirstFragment.newInstance(0, "Page # 1");
+                    return firstfragment.newInstance(0, "Page # 1");
                 case 1: // Fragment # 0 - This will show SecondFragment
                     return SecondFragment.newInstance(1, "Page # 2");
                 case 2: // Fragment # 0 - This will show ThirdFragment
@@ -72,12 +72,12 @@ public class fragment extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             if (position == 0) {
 
-                return "About Me"                 ;
+                return "Books"                 ;
             } if (position == 1) {
-                return "Live Feeds";
+                return "Credit";
             }
             else {
-                return "Ask & More";
+                return "Info";
             }
 
 
