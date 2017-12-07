@@ -45,7 +45,8 @@
         android:textColor="@color/white"
         android:text="Forgot Password?"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot_password"/>
 
     <Button
         android:textSize="20sp"

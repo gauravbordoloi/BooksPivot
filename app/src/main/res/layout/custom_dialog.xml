@@ -8,19 +8,10 @@
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         style="?android:attr/borderlessButtonStyle"
-        android:drawableTop="@drawable/remove_photo"
-        android:gravity="bottom"
-        android:id="@+id/remove_photo_button"
-        android:text="@string/remove_photo"
-        android:textSize="10sp"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        style="?android:attr/borderlessButtonStyle"
         android:drawableTop="@drawable/gallery"
         android:id="@+id/gallery_photo_button"
         android:gravity="bottom"
-        android:text="@string/gallery"
+        android:text="Gallery"
         android:textSize="10sp"/>
     <Button
         android:layout_width="wrap_content"
@@ -29,6 +20,6 @@
         android:drawableTop="@drawable/camera"
         android:id="@+id/camera_photo_button"
         android:gravity="bottom"
-        android:text="@string/camera"
+        android:text="Camera"
         android:textSize="10sp"/>
 </LinearLayout>
