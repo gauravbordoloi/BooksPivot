@@ -60,6 +60,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         FacebookSdk.sdkInitialize(this);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
+        tvRegister=(TextView)findViewById(R.id.registration);
 
         //transparent status bar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -82,7 +83,13 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 startActivityForResult(signInIntent, GGOLE_SIGN_IN);
             }
         });
-
+        tvRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this,RegistrationActivity.class));
+            }
+        });
+      
         tvForgotPassword=(TextView)findViewById(R.id.forgot_password);
         tvForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
