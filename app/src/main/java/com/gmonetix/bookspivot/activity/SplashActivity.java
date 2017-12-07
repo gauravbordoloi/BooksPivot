@@ -1,66 +1,60 @@
 package com.gmonetix.bookspivot.activity;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import com.gmonetix.bookspivot.R;
 
 public class SplashActivity extends AppCompatActivity {
-    public static String str_login_test;
-    public static SharedPreferences sh;
-    public static SharedPreferences.Editor editor;
+ 
+    // Splash screen timer
+    private static int SPLASH_TIME_OUT = 1500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        sh = getSharedPreferences("myprefe", 0);
-        editor = sh.edit();
-        str_login_test = sh.getString("loginTest", null);
-
-        if (getIntent().getBooleanExtra("EXIT", false)) {
-            finish();
-            return;
+        //transparent status bar
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow(); // in Activity's onCreate() for instance
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
+
+        ImageView logo = (ImageView) findViewById(R.id.logo);
+        Animation logo_anim = AnimationUtils.loadAnimation(this, R.anim.translate);
+        logo.startAnimation(logo_anim);
 
         new Handler().postDelayed(new Runnable() {
 
+            /*
+             * Showing splash screen with a timer. This will be useful when you
+             * want to show case your app logo / company
+             */
+
             @Override
             public void run() {
-                /*
-                 * if user login test is true on oncreate then redirect the user
-                 * to result page
-                 */
+                // This method will be executed once the timer is over
+                // Start your app main activity
+                Intent i = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(i);
 
-                if (str_login_test != null
-                        && !str_login_test.toString().trim().equals("")) {
-                    Intent send = new Intent(getApplicationContext(),
-                            LoginActivity.class);
-                    startActivity(send);
-                }
-                /*
-                 * if user login test is false on oncreate then redirect the
-                 * user to login & registration page
-                 */
-                else {
-
-                    Intent send = new Intent(getApplicationContext(),
-                            LoginActivity.class);
-                    startActivity(send);
-
-                }
+                // close this activity
+                finish();
             }
-
-        }, 3000);
+        }, SPLASH_TIME_OUT);
     }
 
-    public boolean containsPass(String str){
-
-        return  sh.contains(str)?true:false;
-
-    }
 }

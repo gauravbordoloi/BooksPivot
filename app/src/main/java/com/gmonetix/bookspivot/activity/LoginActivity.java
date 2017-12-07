@@ -1,12 +1,15 @@
 package com.gmonetix.bookspivot.activity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -59,6 +62,12 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         setContentView(R.layout.activity_login);
         tvRegister=(TextView)findViewById(R.id.registration);
 
+        //transparent status bar
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow(); // in Activity's onCreate() for instance
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
+
         googleLoginButton = (ImageView) findViewById(R.id.google_login_btn);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -74,11 +83,19 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 startActivityForResult(signInIntent, GGOLE_SIGN_IN);
             }
         });
-
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this,RegistrationActivity.class));
+            }
+        });
+      
+        tvForgotPassword=(TextView)findViewById(R.id.forgot_password);
+        tvForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(LoginActivity.this,ForgotPaswdActivity.class);
+                startActivity(i);
             }
         });
 
@@ -124,6 +141,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 request.executeAsync();
 
             }
+
 
             @Override
             public void onCancel() {
