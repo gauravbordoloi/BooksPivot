@@ -3,6 +3,8 @@ package com.gmonetix.bookspivot.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.gmonetix.bookspivot.R;
+
 public class ProfileActivity extends AppCompatActivity {
 
     @Override
