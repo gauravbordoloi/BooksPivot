@@ -34,7 +34,7 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LoginActivity"></activity>
+        <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.RegistrationActivity" />
         <activity
             android:name=".activity.Home"
@@ -51,8 +51,7 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.DownloadsActivity" />
         <activity android:name=".activity.UploadActivity" />
-
-        <activity android:name=".activity.ForgotPasswordActivity"></activity>
+        <activity android:name=".activity.ForgotPasswordActivity" />
         <activity android:name=".activity.BookDetails" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
@@ -62,6 +61,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ProfileActivity" />
+
     </application>
 
 </manifest>
