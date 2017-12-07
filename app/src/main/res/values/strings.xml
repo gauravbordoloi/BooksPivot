@@ -65,4 +65,13 @@
     <string name="website">Official Website</string>
 
 
+    <!--  forgot paswword Activity-->
+
+    <string name="forgot_password">Forgot password?</string>
+    <string name="mail">Email</string>
+    <string name="ResetPassword">Forgot password?</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hinrn">We just need your registered Email Id to sent you password reset instructions.</string>
+
+
 </resources>

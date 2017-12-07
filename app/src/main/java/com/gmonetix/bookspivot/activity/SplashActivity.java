@@ -18,43 +18,59 @@ import android.widget.RelativeLayout;
 import com.gmonetix.bookspivot.R;
 
 public class SplashActivity extends AppCompatActivity {
- 
-    // Splash screen timer
-    private static int SPLASH_TIME_OUT = 1500;
+    public static String str_login_test;
+    public static SharedPreferences sh;
+    public static SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        //transparent status bar
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            Window w = getWindow(); // in Activity's onCreate() for instance
-            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }
+        sh = getSharedPreferences("myprefe", 0);
+        editor = sh.edit();
+        str_login_test = sh.getString("loginTest", null);
 
-        ImageView logo = (ImageView) findViewById(R.id.logo);
-        Animation logo_anim = AnimationUtils.loadAnimation(this, R.anim.translate);
-        logo.startAnimation(logo_anim);
+        if (getIntent().getBooleanExtra("EXIT", false)) {
+            finish();
+            return;
+        }
 
         new Handler().postDelayed(new Runnable() {
 
-            /*
-             * Showing splash screen with a timer. This will be useful when you
-             * want to show case your app logo / company
-             */
-
             @Override
             public void run() {
-                // This method will be executed once the timer is over
-                // Start your app main activity
-                Intent i = new Intent(SplashActivity.this, LoginActivity.class);
-                startActivity(i);
+                /*
+                 * if user login test is true on oncreate then redirect the user
+                 * to result page
+                 */
 
-                // close this activity
+                if (str_login_test != null
+                        && !str_login_test.toString().trim().equals("")) {
+                    Intent send = new Intent(getApplicationContext(),
+                            LoginActivity.class);
+                    startActivity(send);
+                }
+                /*
+                 * if user login test is false on oncreate then redirect the
+                 * user to login & registration page
+                 */
+                else {
+
+                    Intent send = new Intent(getApplicationContext(),
+                            LoginActivity.class);
+                    startActivity(send);
+
+                }
                 finish();
             }
-        }, SPLASH_TIME_OUT);
+
+        }, 3000);
     }
 
+    public boolean containsPass(String str){
+
+        return  sh.contains(str)?true:false;
+
+    }
 }

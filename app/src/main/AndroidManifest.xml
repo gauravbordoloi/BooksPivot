@@ -62,7 +62,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ProfileActivity" />
-        <activity android:name=".activity.ForgotPaswdActivity"></activity>
     </application>
 
 </manifest>
