@@ -8,7 +8,7 @@
 
 
 
-    <include layout="@layout/content_home" />
+    <include layout="@layout/activity_fragment" />
 
 
 
