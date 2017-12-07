@@ -51,6 +51,8 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.DownloadsActivity" />
         <activity android:name=".activity.UploadActivity" />
+
+        <activity android:name=".activity.ForgotPasswordActivity"></activity>
         <activity android:name=".activity.BookDetails" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
