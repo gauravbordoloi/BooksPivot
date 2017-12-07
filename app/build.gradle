@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.gmonetix.bookspivot"
         minSdkVersion 16
@@ -21,27 +21,26 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-auth:11.6.0'
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
     //  compile 'com.folioreader:folioreader:0.3.1'
     compile files('libs/epublib-core-latest.jar')
     compile files('libs/slf4j-android-1.6.1-RC1.jar')
-    compile 'com.android.support:appcompat-v7:26.1.0'
-    compile 'com.android.support:design:26.1.0'
-    compile 'com.android.support:recyclerview-v7:26.1.0'
-    compile 'com.android.support:cardview-v7:26.1.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.facebook.android:facebook-android-sdk:4.18.0'
-    compile 'com.google.android.gms:play-services-auth:11.4.0'
+    implementation 'com.android.support:appcompat-v7:26.0.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.0.1'
+    implementation 'com.android.support:support-v4:26.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.28.0'
+    compile 'com.google.android.gms:play-services-auth:11.6.0'
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
-    compile 'com.afollestad.material-dialogs:core:0.9.4.7'
-    compile 'com.google.firebase:firebase-ads:11.4.0'
-    compile 'com.android.support:support-v4:26.0.1'
-    compile 'com.github.barteksc:android-pdf-viewer:2.7.0'
+    compile 'com.afollestad.material-dialogs:core:0.9.5.0'
+    compile 'com.github.barteksc:android-pdf-viewer:2.8.0'
     compile 'com.github.mertakdut:EpubParser:1.0.95'
-    testCompile 'junit:junit:4.12'
+    compile 'com.github.barteksc:pdfium-android:1.7.1'
+    compile "com.google.firebase:firebase-auth:11.6.0"
 }
 apply plugin: 'com.google.gms.google-services'
