@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.gmonetix.bookspivot.SecondFragment">
 
     <LinearLayout
@@ -42,5 +43,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="8dp"/>
     </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Last Redeemed: $5.00 on 12th Apr. 2017" android:layout_gravity="center_horizontal" android:textStyle="italic" android:textSize="15sp"/>
 
 </LinearLayout>
