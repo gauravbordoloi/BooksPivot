@@ -1,41 +1,33 @@
-package com.gmonetix.bookspivot;
+package com.gmonetix.bookspivot.activity;
 
-import android.Manifest;
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.AnimatorSet;
-import android.app.ActionBar;
-import android.app.ActionBar.Tab;
-import android.app.FragmentTransaction;
-import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.FrameLayout;
-import android.widget.TextView;
 
-import static android.R.color.white;
-import static android.R.transition.fade;
-import static java.sql.Types.NULL;
+import com.gmonetix.bookspivot.R;
+import com.gmonetix.bookspivot.SecondFragment;
+import com.gmonetix.bookspivot.ThirdFragment;
+import com.gmonetix.bookspivot.firstfragment;
 
 public class fragment extends AppCompatActivity {
     int a;
     int b;
     // ...
+    FragmentPagerAdapter adapterViewPager;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_fragment);
+        ViewPager vpPager = findViewById(R.id.vpPager);
+        adapterViewPager = new MyPagerAdapter(getSupportFragmentManager());
+        vpPager.setAdapter(adapterViewPager);
 
 
+    }
 
     public static class MyPagerAdapter extends FragmentPagerAdapter {
         private static int NUM_ITEMS = 3;
@@ -82,23 +74,6 @@ public class fragment extends AppCompatActivity {
 
 
         }}
-
-
-
-
-
-    FragmentPagerAdapter adapterViewPager;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment);
-        ViewPager vpPager = (ViewPager) findViewById(R.id.vpPager);
-        adapterViewPager = new MyPagerAdapter(getSupportFragmentManager());
-        vpPager.setAdapter(adapterViewPager);
-
-
-    }
 
 
 }
