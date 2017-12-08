@@ -7,7 +7,14 @@
     android:background="#f3f3f3"
     android:orientation="vertical"
     tools:context="com.gmonetix.bookspivot.ThirdFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"android:orientation="vertical">
+    <LinearLayout
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:elevation="4dp"
@@ -109,4 +116,6 @@ android:layout_margin="8dp"
         android:text="Update Profile"
         android:backgroundTint="@color/colorPrimary"
         android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+</ScrollView>
 </LinearLayout>
