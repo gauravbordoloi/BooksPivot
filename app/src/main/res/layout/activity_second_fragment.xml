@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context="com.gmonetix.bookspivot.SecondFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:orientation="vertical"
         android:background="#fff"
@@ -62,5 +69,6 @@
         android:layout_marginRight="16dp"
         android:textSize="15sp"
         android:layout_marginTop="16dp"/>
-
+    </LinearLayout>
+    </ScrollView>
 </LinearLayout>
