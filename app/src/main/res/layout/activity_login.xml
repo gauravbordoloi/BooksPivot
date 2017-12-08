@@ -5,99 +5,97 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_bg"
-    android:orientation="vertical"
+    android:fitsSystemWindows="true"
 
-android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context="com.gmonetix.bookspivot.activity.LoginActivity">
 
 
     <ImageView
 
-        android:src="@drawable/logo_header"
         android:layout_width="180dp"
-        android:scaleType="fitEnd"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_height="wrap_content" />
+        android:scaleType="fitEnd"
+        android:src="@drawable/logo_header" />
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="2"
         android:gravity="center"
-        android:layout_weight="2">
+        android:orientation="vertical">
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
         android:text="login"
         android:textAllCaps="true"
-        android:fontFamily="sans-serif"
-        android:textStyle="normal"
         android:textColor="#ffffff"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="30sp"
+        android:textStyle="normal" />
 
     <EditText
         android:id="@+id/appCompatEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:hint="@string/username"
         android:inputType="text"
-        android:background="@drawable/edittext"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="64dp"
-        android:layout_marginLeft="64dp"
         android:padding="10dp"
         android:textColor="#000000"
-        android:textStyle="italic"
-        android:textSize="20sp"
-        android:fontFamily="sans-serif"
         android:textColorHint="#000000"
-        />
-
-    <EditText
-        android:hint="@string/password"
-        android:layout_marginRight="64dp"
-        android:layout_marginLeft="64dp"
-        android:textColorHint="#000000"
-        android:textColor="#000000"
-        android:gravity="center"
         android:textSize="20sp"
-        android:padding="10dp"
+        android:textStyle="italic" />
 
-        android:textStyle="italic"
-        android:fontFamily="sans-serif"
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
         android:background="@drawable/edittext"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:hint="@string/password"
+
         android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="20sp"
+            android:textStyle="italic" />
 
         <Button
 
-            android:text="GO!"
-            android:layout_marginTop="16dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
 
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
             android:background="@drawable/login_button1"
-            android:textColor="@color/white"
-            android:textSize="20sp"
 
             android:fontFamily="sans-serif-smallcaps"
-            android:layout_width="80dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content" />
+            android:text="GO!"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
     <TextView
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:id="@+id/tv_forgotpassword_loginactivity"
-        android:textColor="@color/white"
-        android:text="@string/forgetpass"
-        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/forgot_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/forgot_password"/>
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="@string/forgetpass"
+        android:textColor="@color/white" />
 
 
     </LinearLayout>
@@ -111,58 +109,59 @@ android:fitsSystemWindows="true"
         android:elevation="8dp"
         android:orientation="vertical">
     <TextView
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-condensed"
-        android:textAllCaps="true"
-        android:textStyle="bold"
+        android:gravity="center"
         android:text="or"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
         <TextView
-            android:gravity="center"
-            android:textSize="15sp"
-            android:textColor="#000000"
-            android:fontFamily="sans-serif-condensed"
-            android:textAllCaps="true"
-            android:textStyle="bold"
-            android:text="@string/dowithsocial"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/dowithsocial"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
     <LinearLayout
-        android:weightSum="2"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
         <ImageView
             android:id="@+id/fb_login_btn"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_facebook"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_facebook" />
         <ImageView
             android:id="@+id/google_login_btn"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_google_plus"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_google_plus" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/registration"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:fontFamily="sans-serif-condensed"
-        android:textAllCaps="true"
-        android:layout_marginBottom="16dp"
-        android:textStyle="bold"
-        android:text="@string/noaccount"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/noaccount"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>

@@ -64,5 +64,10 @@
     <string name="help">Help &amp; Feedback</string>
     <string name="website">Official Website</string>
 
+    <!-- Title Strings -->
+    <string name="title_activity_fragment">Activity</string>
+    <string name="title_activity_firstfragment">First</string>
+    <string name="title_activity_second_fragment">Second</string>
+    <string name="title_activity_third_fragment">Third</string>
 
 </resources>

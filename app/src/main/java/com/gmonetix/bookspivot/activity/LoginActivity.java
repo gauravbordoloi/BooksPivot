@@ -2,9 +2,9 @@ package com.gmonetix.bookspivot.activity;
 
 import android.content.Intent;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
@@ -32,27 +33,26 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.Arrays;
 
 public class LoginActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener{
 
+    private static final String TAG = LoginActivity.class.getSimpleName();
+    private static final int GGOLE_SIGN_IN = 007;
+    FacebookCallback<LoginResult> callback;
     private AppCompatEditText etUsername, etPassword;
     private Button btnLogin;
     private TextView tvForgotPassword, tvRegister;
-
     private GoogleApiClient googleApiClient;
     private ImageView googleLoginButton;
-
     private CallbackManager callbackManager;
-    FacebookCallback<LoginResult> callback;
     private AccessTokenTracker accessTokenTracker;
     private ProfileTracker profileTracker;
     private ImageView fbLoginButton;
-
-    private static final String TAG = LoginActivity.class.getSimpleName();
-    private static final int GGOLE_SIGN_IN = 007;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         FacebookSdk.sdkInitialize(this);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
-        tvRegister=(TextView)findViewById(R.id.registration);
+        tvRegister = findViewById(R.id.registration);
 
         //transparent status bar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
 
-        googleLoginButton = (ImageView) findViewById(R.id.google_login_btn);
+        googleLoginButton = findViewById(R.id.google_login_btn);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -89,8 +89,8 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 startActivity(new Intent(LoginActivity.this,RegistrationActivity.class));
             }
         });
-      
-        tvForgotPassword=(TextView)findViewById(R.id.forgot_password);
+
+        tvForgotPassword = findViewById(R.id.forgot_password);
         tvForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,8 +99,8 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
             }
         });
 
-        fbLoginButton = (ImageView) findViewById(R.id.fb_login_btn);
-        tvForgotPassword = (TextView) findViewById(R.id.tv_forgotpassword_loginactivity);
+        fbLoginButton = findViewById(R.id.fb_login_btn);
+        tvForgotPassword = findViewById(R.id.forgot_password);
         callbackManager = CallbackManager.Factory.create();
 
         callback = new FacebookCallback<LoginResult>() {
