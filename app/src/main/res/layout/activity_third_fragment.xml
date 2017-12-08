@@ -83,6 +83,7 @@ android:layout_margin="8dp"
         android:fontFamily="sans-serif-condensed"
         android:text="confirm password"
         android:textAllCaps="true"
+        android:textColor="#000"
         android:layout_marginLeft="8dp"
         />
 
