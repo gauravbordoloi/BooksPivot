@@ -34,7 +34,7 @@ android:layout_margin="8dp"
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
+        android:textStyle="bold" android:textColor="#000"
         android:fontFamily="sans-serif-condensed"
         android:text="Enter your email"
         android:textAllCaps="true"
