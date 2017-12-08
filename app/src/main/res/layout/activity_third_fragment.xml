@@ -103,4 +103,10 @@ android:layout_margin="8dp"
         android:layout_margin="8dp"
         android:background="@drawable/edittext1"/>
 </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>
