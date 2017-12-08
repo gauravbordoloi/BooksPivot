@@ -59,6 +59,7 @@ android:layout_margin="8dp"
         android:textStyle="bold"
         android:fontFamily="sans-serif-condensed"
         android:text="Enter new password"
+        android:textColor="#000"
         android:textAllCaps="true"
         android:layout_marginLeft="8dp"
         />
