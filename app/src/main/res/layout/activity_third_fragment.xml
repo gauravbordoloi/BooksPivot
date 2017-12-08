@@ -32,4 +32,28 @@ android:layout_margin="8dp"
 
         android:layout_margin="8dp"
         android:background="@drawable/edittext1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:hint="Enter your New Password"
+        android:fontFamily="sans-serif-condensedserif"
+
+        android:layout_margin="8dp"
+        android:background="@drawable/edittext1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:hint="Confirm Password"
+        android:fontFamily="sans-serif-condensedserif"
+
+        android:layout_margin="8dp"
+        android:background="@drawable/edittext1"/>
 </LinearLayout>
