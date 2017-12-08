@@ -8,6 +8,15 @@
     android:orientation="vertical"
     tools:context="com.gmonetix.bookspivot.ThirdFragment">
 
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif-condensed"
+    android:text="Enter your name"
+    android:textAllCaps="true"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -15,7 +24,7 @@
         android:inputType="text"
         android:textSize="20sp"
         android:padding="6dp"
-android:hint="Enter your Name"
+
         android:fontFamily="sans-serif-condensedserif"
 
 android:layout_margin="8dp"
