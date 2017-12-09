@@ -27,7 +27,7 @@
             android:layout_height="220dp"
             android:src="@drawable/bglogin2"
             android:scaleType="center"
-            android:foreground="#d0e51c23"/>
+            android:foreground="#d0689F38"/>
         <TextView
             android:layout_width="wrap_content"
             android:text="My Information"
