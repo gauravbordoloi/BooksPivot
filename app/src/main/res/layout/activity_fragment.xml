@@ -43,7 +43,7 @@
             android:layout_below="@id/my_info"
             android:layout_width="80dp"
             android:layout_marginLeft="64dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:layout_alignParentLeft="true"
             android:id="@+id/account_pic"
             android:layout_height="80dp"
@@ -147,8 +147,9 @@ android:layout_toRightOf="@id/book_no"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:visibility="gone"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_home"
+       app:headerLayout="@layout/nav_header_home"
         app:menu="@menu/activity_home_drawer" />
 
 </android.support.v4.widget.DrawerLayout>
