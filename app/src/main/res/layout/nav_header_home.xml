@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:fitsSystemWindows="true"
-    android:background="#e51c23"
+    android:background="@color/colorPrimaryDark"
     android:gravity="bottom"
     android:orientation="horizontal"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
