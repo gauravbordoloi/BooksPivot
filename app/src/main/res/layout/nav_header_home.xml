@@ -49,7 +49,7 @@
             <TextView
                 android:text="@string/number_books"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -65,7 +65,7 @@
             <TextView
                 android:text="@string/downloads"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
