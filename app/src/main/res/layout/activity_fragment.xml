@@ -42,6 +42,7 @@
         <ImageView
             android:layout_below="@id/my_info"
             android:layout_width="80dp"
+            android:layout_marginLeft="64dp"
             android:layout_marginTop="16dp"
             android:layout_alignParentLeft="true"
             android:id="@+id/account_pic"
@@ -49,10 +50,10 @@
             app:srcCompat="@drawable/ic_default_user"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="208dp"
             android:text="Guest User"
             android:id="@+id/my_name"
-
+android:textAlignment="center"
             android:textStyle="normal"
             android:layout_below="@id/account_pic"
             android:layout_alignParentLeft="true"
