@@ -6,6 +6,240 @@
     android:layout_height="match_parent"
     tools:context="com.gmonetix.bookspivot.firstfragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:elevation="4dp"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bglogin2"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/book1"
+                    android:layout_margin="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Making Things Happen"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/book-title"
+                    android:textColor="#000"
+                    android:layout_toRightOf="@id/book1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uploaded on Aug 26, 2017"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-condensed"
+
+                    android:textStyle="italic"
+
+                    android:id="@+id/book-upload"
+                    android:layout_below="@id/book-title"
+                    android:textColor="#000"
+
+                    android:layout_toRightOf="@id/book1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123 Downloads"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+
+                    android:id="@+id/book-downloads"
+                    android:layout_below="@id/book-upload"
+                    android:textColor="#000"
+
+                    android:layout_toRightOf="@id/book1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Business, Inspiration, Motivation"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"
+                    android:id="@+id/book-tag"
+                    android:textColor="#e51c23"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/book1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:elevation="4dp"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bglogin2"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/book2"
+                    android:layout_margin="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Making Things Happen"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/book-title2"
+                    android:textColor="#000"
+                    android:layout_toRightOf="@id/book2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uploaded on Aug 26, 2017"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-condensed"
+
+                    android:textStyle="italic"
+
+                    android:id="@+id/book-upload2"
+                    android:layout_below="@id/book-title2"
+                    android:textColor="#000"
+
+                    android:layout_toRightOf="@id/book2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123 Downloads"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+
+                    android:id="@+id/book-downloads2"
+                    android:layout_below="@id/book-upload2"
+                    android:textColor="#000"
+
+                    android:layout_toRightOf="@id/book2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Business, Inspiration, Motivation"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"
+                    android:id="@+id/book-tag2"
+                    android:textColor="#e51c23"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/book2"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:elevation="4dp"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bglogin2"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/book3"
+                    android:layout_margin="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Making Things Happen"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/book-title3"
+                    android:textColor="#000"
+                    android:layout_toRightOf="@id/book3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uploaded on Aug 26, 2017"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-condensed"
+
+                    android:textStyle="italic"
+
+                    android:id="@+id/book-upload3"
+                    android:layout_below="@id/book-title3"
+                    android:textColor="#000"
+
+                    android:layout_toRightOf="@id/book3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123 Downloads"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+
+                    android:id="@+id/book-downloads3"
+                    android:layout_below="@id/book-upload3"
+                    android:textColor="#000"
+
+                    android:layout_toRightOf="@id/book3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Business, Inspiration, Motivation"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"
+                    android:id="@+id/book-tag3"
+                    android:textColor="#e51c23"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/book3"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

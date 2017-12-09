@@ -4,7 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical"
     tools:context="com.gmonetix.bookspivot.ThirdFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif-condensed"
+    android:text="Enter your name"
+    android:textAllCaps="true"
+    android:textColor="#000"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:padding="6dp"
+
+        android:fontFamily="sans-serif-condensedserif"
+
+android:layout_margin="8dp"
+        android:background="@drawable/edittext1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Enter your email"
+        android:textAllCaps="true"
+        android:layout_marginLeft="8dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:padding="6dp"
+
+        android:fontFamily="sans-serif-condensedserif"
+
+        android:layout_margin="8dp"
+        android:background="@drawable/edittext1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Enter new password"
+        android:textColor="#000"
+        android:textAllCaps="true"
+        android:layout_marginLeft="8dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:padding="6dp"
+
+        android:fontFamily="sans-serif-condensedserif"
+
+        android:layout_margin="8dp"
+        android:background="@drawable/edittext1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:text="confirm password"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:layout_marginLeft="8dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:fontFamily="sans-serif-condensedserif"
+
+        android:layout_margin="8dp"
+        android:background="@drawable/edittext1"/>
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+</ScrollView>
 </LinearLayout>

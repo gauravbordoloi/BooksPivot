@@ -4,8 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.gmonetix.bookspivot.SecondFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:layout_height="wrap_content">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Your Credit is"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$ 2.00"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:textSize="25sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request to Redeem"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Redeemed: $5.00 on 12th Apr. 2017"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimum balance to request to redeem must be $1.\n\nOnce requested, the redeem may take upto three days max to get the amount.\n\nInitially redeeem will use the PayTm wallet to redeem the amount. in future other wallet options will be added."
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="12sp"
+        android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    </ScrollView>
 </LinearLayout>
