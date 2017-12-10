@@ -4,6 +4,10 @@
     <string name="facebook_app_id">1948892872020433</string>
     <string name="fb_login_protocol_scheme">fb868639433300273</string>
     <string name="title_activity_home">Home</string>
+    <string name="title_activity_fragment">home</string>
+    <string name="title_activity_firstfragment">home</string>
+    <string name="title_activity_second_fragment">home</string>
+    <string name="title_activity_third_fragment">home</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
