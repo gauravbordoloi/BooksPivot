@@ -77,7 +77,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@null"
-            android:text="<< Back"
+            android:text="Back"
             android:textColor="@color/colorAccent" />
 
     </LinearLayout>
