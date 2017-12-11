@@ -91,7 +91,6 @@ android:fitsSystemWindows="true"
     <TextView
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:id="@+id/tv_forgotpassword_loginactivity"
         android:textColor="@color/white"
         android:text="@string/forgetpass"
         android:fontFamily="sans-serif-smallcaps"

@@ -1,31 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
+    android:background="#f3f3f3"
     tools:context=".activity.BookDetails">
 
     <include
         layout="@layout/toolbar" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+
+        android:src="@drawable/bglogin2"
+        android:scaleType="center"
+        android:foreground="#d0689F38"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Books Details"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:paddingTop="56dp"
-        android:paddingLeft="24dp"
-        android:focusableInTouchMode="true"
-        android:paddingRight="24dp">
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+
+android:background="@drawable/edittext_background"
+            android:focusableInTouchMode="true"
+        >
+
+
+
     <!-- Author Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:id="@+id/author_input_layout"
-            android:background="@drawable/edittext_background"
             android:layout_marginBottom="8dp">
             <EditText android:id="@+id/input_author"
                 android:layout_width="match_parent"
@@ -38,7 +69,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/edittext_background"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:id="@+id/bookName_input_layout"
             android:layout_marginBottom="8dp">
             <EditText android:id="@+id/input_bookName"
@@ -53,7 +85,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@drawable/edittext_background"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:id="@+id/version_input_layout"
             android:layout_marginBottom="8dp">
             <EditText android:id="@+id/input_version"
@@ -69,13 +102,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@color/navy_blue"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/navy_blue"
         android:paddingBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:paddingTop="16dp"
         android:text="@string/submit" />
     </LinearLayout>
 
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
+</RelativeLayout>
