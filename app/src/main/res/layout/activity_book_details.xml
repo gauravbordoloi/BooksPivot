@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 android:orientation="vertical"
@@ -13,11 +13,27 @@ android:orientation="vertical"
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="220dp"
+
         android:src="@drawable/bglogin2"
         android:scaleType="center"
         android:foreground="#d0689F38"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Books Details"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,10 +42,13 @@ android:orientation="vertical"
         android:gravity="center"
         android:layout_margin="8dp"
         android:elevation="4dp"
-        android:layout_centerVertical="true"
+
 android:background="@drawable/edittext_background"
             android:focusableInTouchMode="true"
         >
+
+
+
     <!-- Author Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -94,5 +113,5 @@ android:background="@drawable/edittext_background"
         android:text="@string/submit" />
     </LinearLayout>
 
-
 </LinearLayout>
+</RelativeLayout>
