@@ -5,11 +5,19 @@
 android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
+    android:background="#f3f3f3"
     tools:context=".activity.BookDetails">
 
     <include
         layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/bglogin2"
+        android:scaleType="center"
+        android:foreground="#d0689F38"/>
 
     <LinearLayout
         android:layout_width="match_parent"
