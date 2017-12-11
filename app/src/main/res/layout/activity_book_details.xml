@@ -17,7 +17,7 @@
         android:orientation="vertical"
         android:gravity="center"
         android:layout_centerVertical="true"
-
+android:background="@drawable/edittext_background"
             android:focusableInTouchMode="true"
         >
     <!-- Author Label -->
