@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/login_bg"
+    android:background="#f3f3f3"
     tools:context="com.gmonetix.bookspivot.activity.UploadActivity">
 
     <include
