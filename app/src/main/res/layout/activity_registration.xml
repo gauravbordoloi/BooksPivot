@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#f3f3f3"
     android:orientation="vertical"
-   
+
     tools:context="com.gmonetix.bookspivot.activity.LoginActivity">
     <ImageView
         android:layout_width="match_parent"
@@ -20,6 +20,18 @@
         android:src="@drawable/logo_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:focusableInTouchMode="true"
+        >
 
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/edt_username"
@@ -88,5 +100,6 @@
         android:text="@string/Privacy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    </LinearLayout>
 
 </RelativeLayout>
