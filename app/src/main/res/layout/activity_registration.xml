@@ -1,20 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
+    android:background="#f3f3f3"
     android:orientation="vertical"
-    android:paddingLeft="60dp"
-    android:paddingRight="60dp"
-    android:paddingTop="40dp"
+
     tools:context="com.gmonetix.bookspivot.activity.LoginActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+
+        android:src="@drawable/bglogin2"
+        android:scaleType="center"
+        android:foreground="#d0689F38"/>
 
     <ImageView
         android:src="@drawable/logo_header"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-32dp"
+        android:id="@+id/logo"
         android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:focusableInTouchMode="true"
+        >
 
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/edt_username"
@@ -55,7 +90,7 @@
         android:text="@string/register"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/login_button"
+        android:backgroundTint="@color/navy_blue"
         android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -63,14 +98,14 @@
     <TextView
         android:id="@+id/existing"
         android:gravity="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:text="Already have an account? Login Here"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
         android:gravity="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="40dp"
         android:text="@string/TnC"
         android:layout_width="match_parent"
@@ -78,10 +113,11 @@
 
     <TextView
         android:gravity="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:text="@string/Privacy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-</LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
