@@ -88,7 +88,7 @@ android:fitsSystemWindows="true"
             android:text="GO!"
             android:layout_marginTop="16dp"
 
-            android:background="@drawable/login_button1"
+            android:backgroundTint="@color/navy_blue"
             android:textColor="@color/white"
             android:textSize="20sp"
 
