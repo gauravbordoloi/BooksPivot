@@ -10,7 +10,14 @@
 android:fitsSystemWindows="true"
     tools:context="com.gmonetix.bookspivot.activity.LoginActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
 
+        android:src="@drawable/bglogin2"
+        android:scaleType="center"
+        android:foreground="#d0689F38"/>
+    
     <ImageView
         android:src="@drawable/logo_header"
         android:layout_width="150dp"
