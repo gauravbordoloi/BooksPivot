@@ -61,24 +61,16 @@ android:fitsSystemWindows="true"
 
 
 
-    <EditText
-        android:id="@+id/appCompatEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:hint="@string/username"
-        android:inputType="text"
-        android:background="@drawable/edittext"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="64dp"
-        android:layout_marginLeft="64dp"
-        android:padding="10dp"
-        android:textColor="#000000"
-        android:textStyle="italic"
-        android:textSize="20sp"
-        android:fontFamily="sans-serif"
-        android:textColorHint="#000000"
-        />
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:padding="14dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black_9e9e9e"        />
 
     <EditText
         android:hint="@string/password"
