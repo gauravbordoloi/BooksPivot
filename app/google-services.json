@@ -1,33 +1,35 @@
 {
   "project_info": {
-    "project_number": "714524285077",
-    "project_id": "books-pivot"
+    "project_number": "654505706852",
+    "firebase_url": "https://bookspivot-bc219.firebaseio.com",
+    "project_id": "bookspivot-bc219",
+    "storage_bucket": "bookspivot-bc219.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:714524285077:android:d49757b88faf41e6",
+        "mobilesdk_app_id": "1:654505706852:android:d49757b88faf41e6",
         "android_client_info": {
           "package_name": "com.gmonetix.bookspivot"
         }
       },
       "oauth_client": [
         {
-          "client_id": "714524285077-ccqva7tbbtaieemldbbukiat0geojpg7.apps.googleusercontent.com",
-          "client_type": 3
-        },
-        {
-          "client_id": "714524285077-ctvd97ofdacuu8cpsaqcba6btsjlch9o.apps.googleusercontent.com",
+          "client_id": "654505706852-6of63i2i21sgq2tuch2f8t6sje1jmi52.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.gmonetix.bookspivot",
-            "certificate_hash": "56496fdb981c3db509e487c05c652d391c8a86b7"
+            "certificate_hash": "61ad3b53013dca8f36f39ddd45c7151a694ac936"
           }
+        },
+        {
+          "client_id": "654505706852-pf6aua8dm060iq11plnspq8l98je29nl.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDyeWA0suqlHc8iDTOs9tQc8VUY3Lv9Uo0"
+          "current_key": "AIzaSyBP-dzsudr5Uoa8koz_Fs1qK9okLwsWmv8"
         }
       ],
       "services": {
@@ -35,11 +37,16 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654505706852-pf6aua8dm060iq11plnspq8l98je29nl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }
