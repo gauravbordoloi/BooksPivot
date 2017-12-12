@@ -5,20 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/login_bg"
+    android:background="#f3f3f3"
     tools:context="com.gmonetix.bookspivot.activity.UploadActivity">
 
     <include
         layout="@layout/toolbar" />
 
+
     <Button
         android:textSize="20sp"
         android:text="@string/upload"
+        android:padding="16dp"
         android:layout_margin="16dp"
         android:onClick="onBrowse"
-        android:background="@drawable/login_button"
-        android:textColor="@color/white"
+        android:backgroundTint="@color/navy_blue"/>
+
+     <Button
+        android:id="@+id/buttonupload"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+         android:textSize="20sp"
+         android:textColor="@color/white"
+
+        android:backgroundTint="@color/navy_blue"
+        android:text="@string/upload"/><!--
+>>>>>>> dc38f0b5485fe54b6aa2fdbad76d1d0850d6e402
+        android:textColor="@color/white"
+        android:textSize="20sp" > -->
+
+    <Button
+        android:id="@+id/buttonchoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/navy_blue"
+        android:text="SELECT FILES"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
 </LinearLayout>
