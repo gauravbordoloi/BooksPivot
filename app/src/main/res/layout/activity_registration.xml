@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
+    android:background="#f3f3f3"
     android:orientation="vertical"
     android:paddingLeft="60dp"
     android:paddingRight="60dp"
