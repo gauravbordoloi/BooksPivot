@@ -1,4 +1,4 @@
-package com.gmonetix.bookspivot;
+package com.gmonetix.bookspivot.activity;
 
 import android.Manifest;
 import android.animation.Animator;
