@@ -17,7 +17,7 @@ android:fitsSystemWindows="true"
         android:src="@drawable/bglogin2"
         android:scaleType="center"
         android:foreground="#d0689F38"/>
-    
+
     <ImageView
         android:src="@drawable/logo_header"
         android:layout_width="150dp"
@@ -25,6 +25,18 @@ android:fitsSystemWindows="true"
         android:layout_marginBottom="-32dp"
         android:id="@+id/logo"
         android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:focusableInTouchMode="true"
+        >
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -170,5 +182,5 @@ android:fitsSystemWindows="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     </LinearLayout>
-
+    </LinearLayout>
 </RelativeLayout>
