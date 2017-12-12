@@ -86,7 +86,7 @@ android:fitsSystemWindows="true"
         <Button
 
             android:text="GO!"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="0dp"
 
             android:backgroundTint="@color/navy_blue"
             android:textColor="@color/white"
