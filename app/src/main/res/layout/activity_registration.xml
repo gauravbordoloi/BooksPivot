@@ -18,12 +18,15 @@
 
     <ImageView
         android:src="@drawable/logo_header"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-32dp"
+        android:id="@+id/logo"
         android:layout_height="wrap_content" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/logo"
         android:orientation="vertical">
 
         <TextView
