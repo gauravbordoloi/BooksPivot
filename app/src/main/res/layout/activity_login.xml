@@ -33,7 +33,7 @@ android:fitsSystemWindows="true"
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registration"
+            android:text="login"
             android:textSize="30sp"
             android:textStyle="bold"
             android:textAllCaps="true"
@@ -60,17 +60,6 @@ android:fitsSystemWindows="true"
         android:layout_weight="2">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="login"
-        android:textAllCaps="true"
-        android:fontFamily="sans-serif"
-        android:textStyle="normal"
-        android:textColor="#ffffff"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/appCompatEditText"
