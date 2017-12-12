@@ -30,6 +30,17 @@ android:fitsSystemWindows="true"
         android:layout_height="wrap_content"
         android:layout_below="@id/logo"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
