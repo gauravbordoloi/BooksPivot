@@ -6,10 +6,15 @@
     android:layout_height="match_parent"
     android:background="#f3f3f3"
     android:orientation="vertical"
-    android:paddingLeft="60dp"
-    android:paddingRight="60dp"
-    android:paddingTop="40dp"
+   
     tools:context="com.gmonetix.bookspivot.activity.LoginActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+
+        android:src="@drawable/bglogin2"
+        android:scaleType="center"
+        android:foreground="#d0689F38"/>
 
     <ImageView
         android:src="@drawable/logo_header"
