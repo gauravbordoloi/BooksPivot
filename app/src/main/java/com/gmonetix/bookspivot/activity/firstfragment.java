@@ -1,4 +1,4 @@
-package com.gmonetix.bookspivot;
+package com.gmonetix.bookspivot.activity;
 import android.content.Intent;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
+import com.gmonetix.bookspivot.R;
 
 
 public class firstfragment extends Fragment {
