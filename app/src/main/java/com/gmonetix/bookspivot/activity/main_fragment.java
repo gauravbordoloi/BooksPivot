@@ -30,6 +30,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.gmonetix.bookspivot.R;
+
 import static android.R.color.white;
 import static android.R.transition.fade;
 import static java.sql.Types.NULL;
