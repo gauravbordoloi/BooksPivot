@@ -8,6 +8,7 @@
             android:src="@drawable/bglogin2"
             android:layout_width="80dp"
             android:scaleType="centerCrop"
+            android:layout_margin="8dp"
             android:layout_height="100dp"/>
 
         <TextView
