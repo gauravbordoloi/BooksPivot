@@ -56,6 +56,6 @@ public class DownloadsActivity extends AppCompatActivity {
 
 }
 
-    }
 
-}
+
+
