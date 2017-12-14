@@ -9,6 +9,27 @@ import com.gmonetix.bookspivot.R;
 
 public class DownloadsActivity extends AppCompatActivity {
 
+    ListView list;
+    String[] book = {
+            "Book 1",
+            "Book 2",
+            "Book 3",
+            "Book 4",
+            "Book 5",
+            "Book 6",
+            "Book 7"
+    } ;
+    Integer[] imageId = {
+            R.drawable.bglogin2,
+            R.drawable.bglogin2,
+            R.drawable.bglogin2,
+            R.drawable.bglogin2,
+            R.drawable.bglogin2,
+            R.drawable.bglogin2,
+            R.drawable.bglogin2
+
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +61,8 @@ public class DownloadsActivity extends AppCompatActivity {
 
         // Assign adapter to ListView
         listView.setAdapter(adapter);
+
+
 
     }
 
