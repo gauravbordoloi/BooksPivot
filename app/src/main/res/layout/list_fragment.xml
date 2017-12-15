@@ -9,11 +9,11 @@
             android:background="#fff"
             android:elevation="4dp"
             android:layout_margin="8dp"
-            android:layout_height="wrap_content">
+            android:layout_height="130dp">
 
             <ImageView
                 android:layout_width="100dp"
-                android:layout_height="130dp"
+                android:layout_height="match_parent"
                 android:src="@drawable/bglogin2"
                 android:scaleType="centerCrop"
                 android:id="@+id/book1"
@@ -69,11 +69,14 @@
                 android:textSize="15sp"
                 android:fontFamily="sans-serif-condensed"
                 android:textAllCaps="false"
-                android:textStyle="bold"
-                android:paddingBottom="8dp"
+                android:textStyle="italic"
+                android:paddingTop="2dp"
+
                 android:id="@+id/book-tag"
-                android:textColor="#e51c23"
-                android:layout_below="@id/book-downloads"
+                android:textColor="#fff"
+                android:background="#e51c23"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentBottom="true"
                 android:layout_toRightOf="@id/book1"/>
 
         </RelativeLayout>
