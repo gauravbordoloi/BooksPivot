@@ -71,7 +71,9 @@
                 android:textAllCaps="false"
                 android:textStyle="italic"
                 android:paddingTop="2dp"
-
+android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:id="@+id/book-tag"
                 android:textColor="#fff"
                 android:background="#e51c23"
