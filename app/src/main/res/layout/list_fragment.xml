@@ -62,6 +62,20 @@
 
                 android:layout_toRightOf="@id/book1"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business, Inspiration, Motivation"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:id="@+id/book-tag"
+                android:textColor="#e51c23"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/book1"/>
+
         </RelativeLayout>
 
 
