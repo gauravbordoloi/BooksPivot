@@ -11,6 +11,14 @@
             android:layout_margin="8dp"
             android:layout_height="wrap_content">
 
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bglogin2"
+                android:scaleType="centerCrop"
+                android:id="@+id/book1"
+                android:layout_margin="8dp"/>
+
         </RelativeLayout>
 
 
