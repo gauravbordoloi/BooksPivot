@@ -13,7 +13,7 @@
 
             <ImageView
                 android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_height="130dp"
                 android:src="@drawable/bglogin2"
                 android:scaleType="centerCrop"
                 android:id="@+id/book1"
@@ -73,7 +73,7 @@
                 android:paddingBottom="8dp"
                 android:id="@+id/book-tag"
                 android:textColor="#e51c23"
-                android:layout_alignParentBottom="true"
+                android:layout_below="@id/book-downloads"
                 android:layout_toRightOf="@id/book1"/>
 
         </RelativeLayout>
