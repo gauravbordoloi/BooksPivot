@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.gmonetix.bookspivot.firstfragment">
-
+    tools:context="com.gmonetix.bookspivot.activity.firstfragment">
+<!--
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -239,7 +239,11 @@
 
 
         </LinearLayout>
-    </ScrollView>
-
+    </ScrollView>-->
+    <ListView
+        android:id="@+id/list1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </ListView>
 
 </LinearLayout>
