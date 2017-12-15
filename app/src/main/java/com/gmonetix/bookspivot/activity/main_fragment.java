@@ -30,6 +30,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.gmonetix.bookspivot.R;
+
 import static android.R.color.white;
 import static android.R.transition.fade;
 import static java.sql.Types.NULL;
@@ -59,11 +61,11 @@ public class main_fragment extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0: // Fragment # 0 - This will show FirstFragment
-                    return com.gmonetix.bookspivot.firstfragment.newInstance(0, "Page # 1");
+                    return firstfragment.newInstance(0, "Page # 1");
                 case 1: // Fragment # 0 - This will show SecondFragment
-                    return com.gmonetix.bookspivot.SecondFragment.newInstance(1, "Page # 2");
+                    return SecondFragment.newInstance(1, "Page # 2");
                 case 2: // Fragment # 0 - This will show ThirdFragment
-                    return com.gmonetix.bookspivot.ThirdFragment.newInstance(2, "Page # 3");
+                    return ThirdFragment.newInstance(2, "Page # 3");
 
                 default:
                     return null;
