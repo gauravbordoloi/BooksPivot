@@ -32,6 +32,21 @@
             android:textColor="#000"
             android:layout_toRightOf="@id/book1"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uploaded on Aug 26, 2017"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-condensed"
+
+                android:textStyle="italic"
+
+                android:id="@+id/book-upload"
+                android:layout_below="@id/book-title"
+                android:textColor="#000"
+
+                android:layout_toRightOf="@id/book1"/>
+
         </RelativeLayout>
 
 
