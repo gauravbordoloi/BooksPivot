@@ -83,12 +83,20 @@ public class firstfragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         page = getArguments().getInt("someInt", 0);
-
-
         title = getArguments().getString("someTitle");
+
+
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_firstfragment, container, false);
+
         FragmentList adapter = new
                 FragmentList(getActivity(), book_name, imageId , book_upload, book_download);
-        list=(ListView)getView().findViewById(R.id.list);
+        list=(ListView) view.findViewById(R.id.list1);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -99,15 +107,6 @@ public class firstfragment extends Fragment {
 
             }
         });
-    }
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_firstfragment, container, false);
-
-
 
 
 

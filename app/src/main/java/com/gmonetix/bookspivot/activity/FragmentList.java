@@ -24,7 +24,7 @@ public class FragmentList extends ArrayAdapter<String> {
 
     public FragmentList(Activity context,
                         String[] name, Integer[] imageId, String[]  upload, String[]  download ) {
-        super(context, R.layout.list_single, name );
+        super(context, R.layout.list_fragment, name );
         this.context = context;
         this.name = name;
         this.upload= upload;
