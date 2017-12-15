@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -85,6 +86,19 @@ public class firstfragment extends Fragment {
 
 
         title = getArguments().getString("someTitle");
+        FragmentList adapter = new
+                FragmentList(getActivity(), book_name, imageId , book_upload, book_download);
+        list=(ListView)getView().findViewById(R.id.list);
+        list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                Toast.makeText(getActivity(), "You Clicked at " +book_name[+ position], Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
 
 
