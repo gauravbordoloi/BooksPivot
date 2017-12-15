@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +24,47 @@ public class firstfragment extends Fragment {
     // Store instance variables
     private String title;
     private int page;
+
+    ListView list;
+    String[] book_name = {
+            "Book 1",
+            "Book 2",
+            "Book 3",
+            "Book 4",
+            "Book 5",
+            "Book 6",
+            "Book 7"
+    } ;
+    Integer[] imageId = {
+            R.drawable.bglogin2,
+            R.drawable.bglogin2,
+            R.drawable.bglogin2,
+            R.drawable.bglogin2,
+            R.drawable.bglogin2,
+            R.drawable.bglogin2,
+            R.drawable.bglogin2
+
+    };
+
+    String[] book_upload = {
+            "Uploaded on Aug 26, 2017",
+            "Uploaded on Aug 26, 2017",
+            "Uploaded on Aug 26, 2017",
+            "Uploaded on Aug 26, 2017",
+            "Uploaded on Aug 26, 2017",
+            "Uploaded on Aug 26, 2017",
+            "Uploaded on Aug 26, 2017"
+    } ;
+
+    String[] book_download = {
+            "123 Downloads",
+            "123 Downloads",
+            "123 Downloads",
+            "123 Downloads",
+            "123 Downloads",
+            "123 Downloads",
+            "123 Downloads"
+    } ;
 
     // newInstance constructor for creating fragment with arguments
     public static firstfragment newInstance(int page, String title) {
