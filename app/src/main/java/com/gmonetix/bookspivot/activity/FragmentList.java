@@ -36,12 +36,13 @@ public class FragmentList extends ArrayAdapter<String> {
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
         View rowView= inflater.inflate(R.layout.list_fragment, null, true);
-        TextView txtTitle = (TextView) rowView.findViewById(R.id.txt);
-        TextView txtTitle = (TextView) rowView.findViewById(R.id.txt);
-        TextView txtTitle = (TextView) rowView.findViewById(R.id.);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.img);
-        txtTitle.setText(web[position]);
-
+        TextView title = (TextView) rowView.findViewById(R.id.book_title);
+        TextView upload_b = (TextView) rowView.findViewById(R.id.book_upload);
+        TextView download_b = (TextView) rowView.findViewById(R.id.book_downloads);
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.book1);
+        title.setText(name[position]);
+        upload_b.setText(upload[position]);
+        download_b.setText(download[position]);
         imageView.setImageResource(imageId[position]);
         return rowView;
     }
