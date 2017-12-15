@@ -1,4 +1,4 @@
-package com.gmonetix.bookspivot;
+package com.gmonetix.bookspivot.activity;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.gmonetix.bookspivot.R;
 
 
 public class ThirdFragment extends Fragment {
