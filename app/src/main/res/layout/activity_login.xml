@@ -92,7 +92,6 @@ android:fitsSystemWindows="true"
             android:textColor="@color/white"
             android:textSize="20sp"
 
-            android:fontFamily="sans-serif-smallcaps"
             android:layout_width="80dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content" />
