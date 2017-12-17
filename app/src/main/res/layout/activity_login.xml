@@ -98,7 +98,7 @@ android:fitsSystemWindows="true"
             android:layout_height="wrap_content" />
 
     <TextView
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="08dp"
         android:gravity="center"
         android:textColor="@color/black"
         android:text="@string/forgetpass"
