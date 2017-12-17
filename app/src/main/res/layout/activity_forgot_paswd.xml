@@ -17,6 +17,15 @@
         android:scaleType="center"
         android:foreground="#d0689F38"/>
 
+
+    <ImageView
+        android:src="@drawable/logo_header"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-32dp"
+        android:id="@+id/logo"
+        android:layout_height="wrap_content" />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
