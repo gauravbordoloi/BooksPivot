@@ -155,9 +155,11 @@ android:textAllCaps="true"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_facebook"
             android:layout_width="0dp"
+            android:padding="8dp"
             android:layout_height="wrap_content" />
         <ImageView
             android:id="@+id/google_login_btn"
+            android:padding="8dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_google_plus"
             android:layout_width="0dp"
