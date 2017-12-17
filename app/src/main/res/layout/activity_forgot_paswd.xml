@@ -45,6 +45,18 @@
             android:layout_gravity="center_horizontal"
             android:textColor="#fff"/>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:focusableInTouchMode="true"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,7 +104,7 @@
             android:textColor="@color/colorAccent" />
 
     </LinearLayout>
-
+    </LinearLayout>
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="30dp"
