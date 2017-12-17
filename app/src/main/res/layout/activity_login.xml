@@ -130,6 +130,11 @@ android:textAllCaps="true"
         android:text="or"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:background="#a2a2a2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
         <TextView
             android:gravity="center"
             android:textSize="15sp"
