@@ -136,7 +136,6 @@ android:textAllCaps="true"
             android:layout_height="2dp"/>
         <TextView
             android:gravity="center"
-            android:textSize="12sp"
             android:textColor="#000000"
             android:textAllCaps="true"
             android:text="use social network"
