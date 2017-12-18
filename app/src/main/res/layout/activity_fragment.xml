@@ -8,148 +8,152 @@
     android:fitsSystemWindows="true"
 
     tools:openDrawer="start">
-<FrameLayout xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:background="#f3f3f3"
-    android:layout_alignParentLeft="true"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:layout_alignParentStart="true"
-    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:src="@drawable/bglogin2"
-            android:scaleType="center"
-            android:foreground="#d0689F38"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:text="My Information"
-            android:id="@+id/my_info"
-            android:visibility="gone"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp"
-            android:textColor="#fff"
-            android:textSize="15sp"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:layout_below="@id/my_info"
-            android:layout_width="80dp"
-            android:layout_marginLeft="64dp"
-            android:layout_marginTop="20dp"
-            android:layout_alignParentLeft="true"
-            android:id="@+id/account_pic"
-            android:layout_height="80dp"
-            app:srcCompat="@drawable/ic_default_user"/>
-
-        <TextView
-            android:layout_width="208dp"
-            android:text="User"
-            android:id="@+id/my_name"
-android:textAlignment="center"
-            android:textStyle="normal"
-            android:layout_below="@id/account_pic"
-            android:layout_alignParentLeft="true"
-            android:layout_marginTop="0dp"
-            android:textColor="#fff"
-            android:textSize="25sp"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8"
-android:layout_below="@id/download_no"
-            android:layout_toRightOf="@id/account_pic"
-android:layout_marginLeft="16dp"
-
-            android:textColor="#fff"
-            android:textSize="25sp"
-            android:layout_marginRight="8dp"
-            android:fontFamily="sans-serif-condensed"
-            android:textStyle="bold"
-            android:id="@+id/book_no"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:textSize="20sp"
-            android:layout_height="wrap_content"
-            android:text="Books"
-            android:layout_below="@id/download_no"
-android:layout_toRightOf="@id/book_no"
-            android:paddingTop="5dp"
-
-            android:layout_marginRight="16dp"
-            android:textColor="#f3f3f3"
-            android:gravity="bottom"
-            android:id="@+id/books"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#f3f3f3"
-            android:textSize="20sp"
-            android:text="Downloads"
-            android:paddingTop="5dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="16dp"
-            android:layout_toRightOf="@id/download_no"
-            android:id="@+id/downloads"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/download_no"
-            android:textSize="25sp"
-
-            android:layout_marginLeft="16dp"
-            android:layout_toRightOf="@id/account_pic"
-            android:layout_alignParentTop="true"
-            android:layout_marginRight="8dp"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            android:layout_marginTop="32dp"
-            android:text="2789"/>
-
-    </RelativeLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/vpPager"
-        android:layout_marginTop="150dp"
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme1"
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#f3f3f3">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:foreground="#d0689F38"
+                android:scaleType="center"
+                android:src="@drawable/bglogin2" />
 
-        <android.support.v4.view.PagerTabStrip
-            android:id="@+id/pager_header"
+            <TextView
+                android:id="@+id/my_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="My Information"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/account_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/my_info"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_default_user" />
+
+            <TextView
+                android:id="@+id/my_name"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/account_pic"
+                android:layout_marginTop="0dp"
+                android:text="User"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/book_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/download_no"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+
+                android:layout_toRightOf="@id/account_pic"
+                android:fontFamily="sans-serif-condensed"
+                android:text="8"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/books"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/download_no"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/book_no"
+                android:gravity="bottom"
+
+                android:paddingTop="5dp"
+                android:text="Books"
+                android:textColor="#f3f3f3"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/downloads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_toRightOf="@id/download_no"
+                android:paddingTop="5dp"
+                android:text="Downloads"
+                android:textColor="#f3f3f3"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/download_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_toRightOf="@id/account_pic"
+                android:text="2789"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/vpPager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:paddingBottom="8dp"
-
-            android:background="#fff"
-            android:paddingTop="8dp"
-            android:elevation="4dp"/>
-
-    </android.support.v4.view.ViewPager>
+            android:layout_marginTop="150dp"
+            android:orientation="vertical"
+            android:theme="@style/AppTheme1">
 
 
-</FrameLayout>
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pager_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="#fff"
+
+                android:elevation="4dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" />
+
+        </android.support.v4.view.ViewPager>
+
+
+    </FrameLayout>
+
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:visibility="gone"
         android:fitsSystemWindows="true"
-       app:headerLayout="@layout/nav_header_home"
+        android:visibility="gone"
+        app:headerLayout="@layout/nav_header_home"
         app:menu="@menu/activity_home_drawer" />
 
 </android.support.v4.widget.DrawerLayout>
