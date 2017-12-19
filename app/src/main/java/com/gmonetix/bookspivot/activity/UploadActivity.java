@@ -92,6 +92,17 @@ public class UploadActivity extends AppCompatActivity implements View.OnClickLis
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == PICK_PDF_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
             filePath = data.getData();
+
+
+
+                Uri uri = data.getData();
+                Log.e("TAG", uri.toString());
+//            File myFile = new File(uri.toString());
+//            Log.e("TAG", String.valueOf(myFile.length()));
+                generateImageFromPdfUsingFD(uri, "bookfirstpage.png");
+                Intent formIntent = new Intent(this, BookDetails.class);
+                startActivity(formIntent);
+
         }
     }
 
@@ -127,17 +138,8 @@ public class UploadActivity extends AppCompatActivity implements View.OnClickLis
                 Toast.makeText(this, "Oops you just denied the permission", Toast.LENGTH_LONG).show();
             }
 
-
-    {
-        Uri uri = data.getData();
-        Log.e("TAG", uri.toString());
-//            File myFile = new File(uri.toString());
-//            Log.e("TAG", String.valueOf(myFile.length()));
-        generateImageFromPdfUsingFD(uri, "bookfirstpage.png");
-        Intent formIntent = new Intent(this, BookDetails.class);
-        startActivity(formIntent);
+        }
     }
-}}
 
     private void generateImageFromPdfUsingFD(Uri pdfUri, String name) {
         int pageNumber = 0;
