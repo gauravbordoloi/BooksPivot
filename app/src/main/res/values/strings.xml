@@ -11,7 +11,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string name="books_pivot">BooksPivot</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
@@ -30,7 +30,7 @@
     <string name="login">Login</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="forgetpass">Forget Password ?</string>
+    <string name="forgetpass">Forgot Password ?</string>
     <string name="dowithsocial">Do with Social Networks</string>
     <string name="noaccount">Don\'t have an account yet ?</string>
 
@@ -58,7 +58,8 @@
 
     <string name="home">Home</string>
     <string name="profile">Profile</string>
-    //upload in UPLOAD ACTIVITY
+
+    <!-- Upload Activity -->
     <string name="download">Download</string>
     <string name="others">Others</string>
     <string name="logout">Logout</string>
@@ -67,6 +68,17 @@
     <string name="rateus">Rate Us</string>
     <string name="help">Help &amp; Feedback</string>
     <string name="website">Official Website</string>
+
+    <!-- Update_Profile Activity -->
+    <string name="up_name">"Enter your name"</string>
+    <string name="up_email">"Enter your email"</string>
+    <string name="up_pwd">"Enter new password"</string>
+    <string name="up_cpwd">"confirm password"</string>
+
+    <!--Forgot Password Activity -->
+    <string name="forgot_pwd_detail">We just need your registered Email Id to send you password reset instructions.</string>
+    <string name="reset_pwd">Reset Password</string>
+    <string name="back">Back</string>
 
 
 </resources>

@@ -1,88 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:background="#fff"
-            android:elevation="4dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="8dp"
+        android:background="#fff"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/book1"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
             android:layout_margin="8dp"
-            android:layout_height="130dp">
+            android:scaleType="centerCrop"
+            android:src="@drawable/bglogin2" />
 
-            <ImageView
-                android:layout_width="90dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/bglogin2"
-                android:scaleType="centerCrop"
-                android:id="@+id/book1"
-                android:layout_margin="8dp"/>
-
-            <TextView
+        <TextView
+            android:id="@+id/book-title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Making Things Happen"
-            android:textSize="20sp"
-            android:fontFamily="sans-serif-condensed"
-            android:textAllCaps="true"
-            android:textStyle="bold"
             android:layout_marginTop="8dp"
-            android:id="@+id/book-title"
+            android:layout_toRightOf="@id/book1"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Making Things Happen"
+            android:textAllCaps="true"
             android:textColor="#000"
-            android:layout_toRightOf="@id/book1"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Uploaded on Aug 26, 2017"
-                android:textSize="12sp"
-                android:fontFamily="sans-serif-condensed"
+        <TextView
+            android:id="@+id/book-upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book-title"
+            android:layout_toRightOf="@id/book1"
 
-                android:textStyle="italic"
+            android:fontFamily="sans-serif-condensed"
 
-                android:id="@+id/book-upload"
-                android:layout_below="@id/book-title"
-                android:textColor="#000"
+            android:text="Uploaded on Aug 26, 2017"
+            android:textColor="#000"
+            android:textSize="12sp"
 
-                android:layout_toRightOf="@id/book1"/>
+            android:textStyle="italic" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="123 Downloads"
-                android:textSize="15sp"
-                android:fontFamily="sans-serif"
-                android:textAllCaps="false"
-                android:textStyle="normal"
+        <TextView
+            android:id="@+id/book-downloads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book-upload"
+            android:layout_toRightOf="@id/book1"
+            android:fontFamily="sans-serif"
+            android:text="123 Downloads"
 
-                android:id="@+id/book-downloads"
-                android:layout_below="@id/book-upload"
-                android:textColor="#000"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="15sp"
 
-                android:layout_toRightOf="@id/book1"/>
+            android:textStyle="normal" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Business, Inspiration, Motivation"
-                android:textSize="15sp"
-                android:fontFamily="sans-serif-condensed"
-                android:textAllCaps="false"
-                android:textStyle="italic"
-                android:paddingTop="2dp"
-android:paddingBottom="2dp"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
-                android:id="@+id/book-tag"
-                android:textColor="#fff"
-                android:background="#e51c23"
-                android:layout_marginBottom="8dp"
-                android:layout_alignParentBottom="true"
-                android:layout_toRightOf="@id/book1"/>
+        <TextView
+            android:id="@+id/book-tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/book1"
+            android:background="#e51c23"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:text="Business, Inspiration, Motivation"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="italic" />
 
-        </RelativeLayout>
-
-
+    </RelativeLayout>
 
 </TableLayout>
