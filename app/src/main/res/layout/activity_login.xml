@@ -5,26 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f3f3f3"
-    android:orientation="vertical"
+    android:fitsSystemWindows="true"
 
-android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context="com.gmonetix.bookspivot.activity.LoginActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="220dp"
 
-        android:src="@drawable/bglogin2"
+        android:foreground="#d0689F38"
         android:scaleType="center"
-        android:foreground="#d0689F38"/>
+        android:src="@drawable/bglogin2" />
 
     <ImageView
-        android:src="@drawable/logo_header"
+        android:id="@+id/logo"
         android:layout_width="150dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="-32dp"
-        android:id="@+id/logo"
-        android:layout_height="wrap_content" />
+        android:src="@drawable/logo_header" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,82 +33,81 @@ android:fitsSystemWindows="true"
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="login"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:textAllCaps="true"
-            android:layout_margin="8dp"
             android:layout_gravity="center_horizontal"
-            android:textColor="#fff"/>
+            android:layout_margin="8dp"
+            android:text="login"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
         android:layout_margin="8dp"
-        android:elevation="4dp"
-        android:padding="8dp"
         android:background="@drawable/edittext_background"
+        android:elevation="4dp"
         android:focusableInTouchMode="true"
-        >
-    <LinearLayout
+        android:gravity="center"
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:layout_weight="2">
+        android:padding="8dp">
 
-
-
-        <android.support.v7.widget.AppCompatEditText
-            android:id="@+id/edt_username"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:gravity="center"
-            android:hint="@string/username"
-            android:inputType="text"
-            android:padding="14dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/black_9e9e9e"        />
-
-        <android.support.v7.widget.AppCompatEditText
-            android:id="@+id/edt_Rpassword"
-            android:hint="@string/password"
-            android:textColorHint="@color/black_9e9e9e"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:padding="14dp"
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <Button
-
-            android:text="GO!"
-            android:layout_marginTop="0dp"
-
-            android:backgroundTint="@color/navy_blue"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-
-            android:fontFamily="sans-serif-smallcaps"
-            android:layout_width="80dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_marginTop="0dp"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:text="@string/forgetpass"
-android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/forgot_password"/>
+            android:orientation="vertical">
 
 
-    </LinearLayout>
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColor="@color/black_9e9e9e"
+                android:textColorHint="@color/black_9e9e9e"        />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_Rpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:textColor="@color/black_9e9e9e"
+                android:textColorHint="@color/black_9e9e9e" />
+
+            <Button
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="@color/navy_blue"
+
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="GO!"
+                android:textColor="@color/black_9e9e9e"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="@string/forgetpass"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -119,55 +118,55 @@ android:textAllCaps="false"
         android:elevation="8dp"
         android:orientation="vertical">
     <TextView
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:layout_marginTop="0dp"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        android:layout_margin="10dp"
-        android:text="or"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="or"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
         <TextView
-            android:gravity="center"
-            android:textSize="15sp"
-            android:textColor="#000000"
-            android:textAllCaps="false"
-            android:text="@string/dowithsocial"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/dowithsocial"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="15sp" />
 
     <LinearLayout
-        android:weightSum="2"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
         <ImageView
             android:id="@+id/fb_login_btn"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_facebook"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_facebook" />
         <ImageView
             android:id="@+id/google_login_btn"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_google_plus"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_google_plus" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/registration"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:textAllCaps="true"
-        android:layout_marginBottom="16dp"
-        android:textStyle="bold"
-        android:text="@string/noaccount"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/noaccount"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold" />
     </LinearLayout>
     </LinearLayout>
     </LinearLayout>
