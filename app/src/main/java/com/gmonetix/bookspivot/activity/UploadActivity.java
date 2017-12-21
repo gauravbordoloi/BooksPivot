@@ -18,12 +18,17 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.gmonetix.bookspivot.R;
+import com.gmonetix.bookspivot.util.FilePath;
 import com.shockwave.pdfium.PdfDocument;
 import com.shockwave.pdfium.PdfiumCore;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.net.MalformedURLException;
 import java.util.UUID;
+import net.gotev.uploadservice.MultipartUploadRequest;
+import net.gotev.uploadservice.UploadNotificationConfig;
 
 
 public class UploadActivity extends AppCompatActivity implements View.OnClickListener{
@@ -58,12 +63,20 @@ public class UploadActivity extends AppCompatActivity implements View.OnClickLis
 
         //getting the actual path of the image
         String path = FilePath.getPath(this, filePath);
-        new MultipartUploadRequest(this, uploadID, UPLOAD_URL)
-                .addFileToUpload(path, "pdf") //Adding file
-                .addParameter("name", name) //Adding text parameter to the request
-                .setNotificationConfig(new UploadNotificationConfig())
-                .setMaxRetries(2)
-                .startUpload();
+
+        //creating a multipart request
+        try {
+            new MultipartUploadRequest(this, uploadID, UPLOAD_URL)
+                    .addFileToUpload(path, "pdf") //Adding file
+                   // .addParameter("name", name) //Adding text parameter to the request
+                    .setNotificationConfig(new UploadNotificationConfig())
+                    .setMaxRetries(2)
+                    .startUpload();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         //Uploading code
         if (path == null) {
@@ -93,6 +106,17 @@ public class UploadActivity extends AppCompatActivity implements View.OnClickLis
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == PICK_PDF_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
             filePath = data.getData();
+
+
+
+                Uri uri = data.getData();
+                Log.e("TAG", uri.toString());
+//            File myFile = new File(uri.toString());
+//            Log.e("TAG", String.valueOf(myFile.length()));
+                generateImageFromPdfUsingFD(uri, "bookfirstpage.png");
+                Intent formIntent = new Intent(this, BookDetails.class);
+                startActivity(formIntent);
+
         }
     }
 
@@ -128,17 +152,8 @@ public class UploadActivity extends AppCompatActivity implements View.OnClickLis
                 Toast.makeText(this, "Oops you just denied the permission", Toast.LENGTH_LONG).show();
             }
 
-
-    {
-        Uri uri = data.getData();
-        Log.e("TAG", uri.toString());
-//            File myFile = new File(uri.toString());
-//            Log.e("TAG", String.valueOf(myFile.length()));
-        generateImageFromPdfUsingFD(uri, "bookfirstpage.png");
-        Intent formIntent = new Intent(this, BookDetails.class);
-        startActivity(formIntent);
+        }
     }
-}}
 
     private void generateImageFromPdfUsingFD(Uri pdfUri, String name) {
         int pageNumber = 0;

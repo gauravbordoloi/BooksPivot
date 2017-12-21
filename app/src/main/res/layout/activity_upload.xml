@@ -12,13 +12,13 @@
         layout="@layout/toolbar" />
 
 
-    <Button
-        android:textSize="20sp"
-        android:text="@string/upload"
-        android:padding="16dp"
-        android:layout_margin="16dp"
-        android:onClick="onBrowse"
-        android:backgroundTint="@color/navy_blue"/>
+    <!--<Button-->
+        <!--android:textSize="20sp"-->
+        <!--android:text="@string/upload"-->
+        <!--android:padding="16dp"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:onClick="onBrowse"-->
+        <!--android:backgroundTint="@color/navy_blue"/>-->
 
      <Button
         android:id="@+id/buttonupload"

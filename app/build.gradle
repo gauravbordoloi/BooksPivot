@@ -43,5 +43,7 @@ dependencies {
     compile 'com.google.firebase:firebase-auth:11.6.0'
     compile 'com.google.firebase:firebase-core:11.6.0'
     compile 'com.github.barteksc:pdfium-android:1.7.1'
+    compile 'net.gotev:uploadservice:2.1'
+
 }
 apply plugin: 'com.google.gms.google-services'
